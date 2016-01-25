@@ -1,0 +1,18 @@
+
+option java_outer_classname = "ResultProto";
+
+message CourseMarks {
+      optional string name = 1;
+        optional int32 score = 2;
+}
+
+message Student {
+      optional string name = 1;
+        optional int32 rollNum = 2;
+          repeated CourseMarks marks = 3;
+}
+
+message Result {
+      repeated Student student = 1;
+}
+
